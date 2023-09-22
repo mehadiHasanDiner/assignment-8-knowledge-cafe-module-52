@@ -1,6 +1,54 @@
-{"id":1,"cover_image":"http://dummyimage.com/600x400.png/cc0000/ffffff","blog_title":"Object of My Affection, The","author_image":"https://robohash.org/accusantiumutquasi.jpg?size=50x50&set=set1","author_name":"Karlie","published_date":"6/12/2023","reading_time":10,"hashTags":[{},{}]}
-{"id":2,"cover_image":"http://dummyimage.com/600x400.png/cc0000/ffffff","blog_title":"Love and Honor","author_image":"https://robohash.org/estteneturvelit.jpg?size=50x50&set=set1","author_name":"Iggie","published_date":"8/20/2023","reading_time":5,"hashTags":[{},{},{}]}
-{"id":3,"cover_image":"http://dummyimage.com/600x400.png/cc0000/ffffff","blog_title":"Special Relationship, The","author_image":"https://robohash.org/doloribuspariaturquos.jpg?size=50x50&set=set1","author_name":"Mireille","published_date":"9/17/2023","reading_time":14,"hashTags":[{},{},{}]}
-{"id":4,"cover_image":"http://dummyimage.com/600x400.png/ff4444/ffffff","blog_title":"Double Solitaire","author_image":"https://robohash.org/aliquamdelectuserror.jpg?size=50x50&set=set1","author_name":"Othello","published_date":"9/18/2023","reading_time":6,"hashTags":[{},{},{}]}
-{"id":5,"cover_image":"http://dummyimage.com/600x400.png/dddddd/000000","blog_title":"Free the Nipple","author_image":"https://robohash.org/numquamrepudiandaerepellendus.jpg?size=50x50&set=set1","author_name":"Cheslie","published_date":"6/9/2023","reading_time":13,"hashTags":[{},{},{}]}
-{"id":6,"cover_image":"http://dummyimage.com/600x400.png/dddddd/000000","blog_title":"World Without End","author_image":"https://robohash.org/reiciendismollitiaoccaecati.jpg?size=50x50&set=set1","author_name":"Carmel","published_date":"9/15/2023","reading_time":8,"hashTags":[{},{},{}]}
+[
+    {
+        "id": 1,
+        "cover_image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=900&t=st=1695413968~exp=1695414568~hmac=ee9ce107f8b0f00742302097315c8df14c3917f5019ac30bb507a1e895fab74b",
+        "blog_title": "Object of My Affection, The",
+        "author_image": "https://robohash.org/accusantiumutquasi.jpg?size=50x50&set=set1",
+        "author_name": "Karlie",
+        "published_date": "6/12/2023",
+        "reading_time": 10,
+        "hashTags": [
+            "#beginners",
+            "#programming"
+        ]
+    },
+    {
+        "id": 2,
+        "cover_image": "https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg?w=900&t=st=1695413905~exp=1695414505~hmac=eb550a979a975f5b5bab7b991c2ba84bbb0e7ab5c4e1162df25415c1c824784a",
+        "blog_title": "Love and Honor",
+        "author_image": "https://robohash.org/estteneturvelit.jpg?size=50x50&set=set1",
+        "author_name": "Iggie",
+        "published_date": "8/20/2023",
+        "reading_time": 5,
+        "hashTags": [
+            "#beginners",
+            "#programming"
+        ]
+    },
+    {
+        "id": 3,
+        "cover_image": "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=900&t=st=1695413764~exp=1695414364~hmac=9c3e79f7e94966aaee1705dd09ebc31a24b8d70be9d35bd9d15b22c6ae3428d6",
+        "blog_title": "Special Relationship, The",
+        "author_image": "https://robohash.org/doloribuspariaturquos.jpg?size=50x50&set=set1",
+        "author_name": "Mireille",
+        "published_date": "9/17/2023",
+        "reading_time": 14,
+        "hashTags": [
+            "#beginners",
+            "#programming"
+        ]
+    },
+    {
+        "id": 4,
+        "cover_image": "https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010133.jpg?w=900&t=st=1695414060~exp=1695414660~hmac=7fcd3a56e8d450b7def9c06396641037315e6182a359733e1d4170310ce2c7f5",
+        "blog_title": "Double Solitaire",
+        "author_image": "https://robohash.org/aliquamdelectuserror.jpg?size=50x50&set=set1",
+        "author_name": "Othello",
+        "published_date": "9/18/2023",
+        "reading_time": 6,
+        "hashTags": [
+            "#beginners",
+            "#programming"
+        ]
+    }
+]
