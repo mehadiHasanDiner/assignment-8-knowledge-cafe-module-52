@@ -16,7 +16,7 @@ const Blog = (props) => {
   return (
     <>
       <div className="py-2">
-        <img className="rounded-md" src={cover_image} alt="" />
+        <img className="rounded-md w-full" src={cover_image} alt="" />
         <div className="flex justify-between py-2">
           <div className="flex">
             <div className="pr-2">

@@ -20,8 +20,8 @@ const Blogs = () => {
   //   console.log(blogs);
   return (
     <>
-      <div className="grid xs:grid-cols-1  md:grid-cols-3  gap-4 xs:px-16 md:px-16">
-        <div className="col-span-2 mr-8">
+      <div className="grid grid-cols-1  md:grid-cols-3  gap-4 px-2 xs:px-32 md:px-32">
+        <div className="col-span-2">
           {blogs.map((blog) => (
             <Blog
               blog={blog}
@@ -30,7 +30,7 @@ const Blogs = () => {
             ></Blog>
           ))}
         </div>
-        <div className="fixed top-16 right-0 pr-16">
+        <div>
           <h1>Spent time on read : 0 min</h1>
           <Bookmark bookMark={bookMark}></Bookmark>
         </div>
