@@ -9,7 +9,7 @@ const MyBlog = () => {
         <p className="font-bold py-2">
           1. What are the differences between Props vs state?{" "}
         </p>
-        <p>
+        <p className="text-justify">
           <span className="font-bold">Ans:</span> Props and State are both used
           to manage data in react but there some differences to them. There are
           as follow: state:
@@ -57,11 +57,55 @@ const MyBlog = () => {
                 </tr>
                 {/* row 3 */}
                 <tr>
-                  <td>Brice Swyre</td>
-                  <td>Tax Accountant</td>
+                  <td>
+                    <strong>Function Parameters:</strong> Any data as well as
+                    any function can be passed by props. In functional
+                    components, props are passed as function parameters. In
+                    class components, they are accessed via this.props.
+                  </td>
+                  <td>
+                    <strong>Functional Component: </strong> State gives us two
+                    things one is a value and a function. It generally refers to
+                    data or properties that need to be tracking in an
+                    application.{" "}
+                  </td>
                 </tr>
               </tbody>
             </table>
+
+            <p className="font-bold py-2">2. How does useState work? </p>
+            <p className="text-justify">
+              <strong>useState</strong> hook is a very common hook in react
+              which is used to store and update any variable value on a
+              component level. The reason why we would store the variable value
+              inside the state is so that we can access those values without any
+              sort of DOM manipulation which are not available in React JS.
+            </p>
+
+            <p className="font-bold py-2">
+              3. What is the Purpose of useEffect other than fetching data?{" "}
+            </p>
+            <p className="text-justify">
+              <strong>useEffect</strong> provides a flexible and powerful way to
+              manage the side effects of your React components, whether they
+              involve fetching data or performing other types of operations.
+            </p>
+            <p>1. Live filtering running on state change.</p>
+            <p>2. Validating input field running on state change.</p>
+            <p>
+              3. Trigger animation on new array value running on state change.
+            </p>
+            <p>4. Update content running on props change.</p>
+
+            <p className="font-bold py-2">4. How does React work? </p>
+            <p className="text-justify mb-4">
+              React is a JavaScript library for building user interfaces. It
+              works by breaking the UI down into reusable components and
+              updating the actual DOM using a virtual DOM and a process called
+              reconciliation. React follows a one-way data flow model and
+              provides hooks for managing state. Overall, React is a powerful
+              and flexible tool for building complex, interactive UIs.
+            </p>
           </div>
         </p>
       </div>
