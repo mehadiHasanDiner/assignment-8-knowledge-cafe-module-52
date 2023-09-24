@@ -35,7 +35,7 @@ const Blog = (props) => {
             <div className=" flex">
               {reading_time} min read{" "}
               <span
-                onClick={() => handleBookmark(props.blog)}
+                onClick={() => handleBookmark(id)}
                 className="cursor-pointer"
               >
                 <svg

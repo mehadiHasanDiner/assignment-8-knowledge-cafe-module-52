@@ -8,6 +8,7 @@ const Blogs = () => {
 
   const handleBookmark = (bookMarkData) => {
     setBookMark(bookMarkData);
+    console.log(bookMarkData);
   };
   //   console.log(bookMark);
 
