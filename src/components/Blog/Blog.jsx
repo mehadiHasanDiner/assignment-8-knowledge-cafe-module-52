@@ -3,6 +3,7 @@ import React from "react";
 const Blog = (props) => {
   //   console.log(props.blog);
   const {
+    id,
     cover_image,
     author_image,
     author_name,
@@ -10,6 +11,7 @@ const Blog = (props) => {
     reading_time,
     hashTags,
   } = props.blog;
+  const handleBookmark = props.handleBookmark;
 
   return (
     <>
@@ -31,7 +33,10 @@ const Blog = (props) => {
           </div>
           <div className=" flex">
             {reading_time} min read{" "}
-            <span onClick={() => handleBookmark()} className="cursor-pointer">
+            <span
+              onClick={() => handleBookmark(props.blog)}
+              className="cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
