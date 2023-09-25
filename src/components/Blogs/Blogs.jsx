@@ -6,9 +6,9 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [bookMark, setBookMark] = useState([]);
 
-  const handleBookmark = (bookMarkData) => {
-    setBookMark(bookMarkData);
-    console.log(bookMarkData);
+  const handleBookmark = (blogId) => {
+    setBookMark(blogId);
+    console.log(blogId);
   };
   //   console.log(bookMark);
 
@@ -31,14 +31,9 @@ const Blogs = () => {
             ></Blog>
           ))}
         </div>
-        <div>
-          <div className="mt-6">
-            <h1 className="font-bold border-purple-400 border-4 bg-purple-100 rounded-md p-4 text-center">
-              Spent time on read : 0 min
-            </h1>
-          </div>
+        <>
           <Bookmark bookMark={bookMark}></Bookmark>
-        </div>
+        </>
       </div>
     </>
   );
