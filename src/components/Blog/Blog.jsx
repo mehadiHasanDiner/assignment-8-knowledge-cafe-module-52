@@ -1,9 +1,10 @@
-import React from "react";
+import { faBookmark as bookmarkRegular } from "@fortawesome/free-regular-svg-icons";
+import { faBookmark as bookmarkSolid } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 const Blog = (props) => {
-  //   console.log(props.blog);
+  // console.log(props);
   const {
     id,
     cover_image,
@@ -15,6 +16,7 @@ const Blog = (props) => {
     bookmark,
   } = props.blog;
   const handleBookmark = props.handleBookmark;
+  const handleReadingTime = props.handleReadingTime;
 
   return (
     <>
@@ -35,20 +37,20 @@ const Blog = (props) => {
                 <p>Mar 14 (4 Days ago)</p>
               </div>
             </div>
-            <div className=" flex">
-              {reading_time} min read{" "}
+            <div className="flex">
+              {reading_time} min read &nbsp;
               <span>
                 {bookmark ? (
                   <FontAwesomeIcon
                     onClick={() => handleBookmark(id)}
                     className="cursor-pointer"
-                    icon={faBookmark}
+                    icon={bookmarkSolid}
                   />
                 ) : (
                   <FontAwesomeIcon
                     onClick={() => handleBookmark(id)}
                     className="cursor-pointer"
-                    icon={faBookmark}
+                    icon={bookmarkRegular}
                   />
                 )}
               </span>
@@ -64,7 +66,7 @@ const Blog = (props) => {
             </span>
           ))}
           <p className="text-purple-500 underline cursor-pointer">
-            Mark as read
+            <span onClick={() => handleReadingTime(id)}>Mark as read</span>
           </p>
           {/* <hr className="border-1 my-4" /> */}
         </div>

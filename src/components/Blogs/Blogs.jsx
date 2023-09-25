@@ -7,6 +7,13 @@ import Bookmark from "../Bookmark/Bookmark";
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [bookMark, setBookMark] = useState([]);
+  const [readingTime, setReading] = useState(0);
+
+  const handleReadingTime = (blogId) => {
+    const blogReadTime = blogs.find((b) => b.id === blogId);
+    const totalTime = readingTime + blogReadTime.reading_time;
+    setReading(totalTime);
+  };
 
   const handleBookmark = (blogId) => {
     let newBookmarked = [];
@@ -47,11 +54,12 @@ const Blogs = () => {
               blog={blog}
               key={blog.id}
               handleBookmark={handleBookmark}
+              handleReadingTime={handleReadingTime}
             ></Blog>
           ))}
         </div>
         <>
-          <Bookmark bookMark={bookMark}></Bookmark>
+          <Bookmark readingTime={readingTime} bookMark={bookMark}></Bookmark>
           <ToastContainer />
         </>
       </div>

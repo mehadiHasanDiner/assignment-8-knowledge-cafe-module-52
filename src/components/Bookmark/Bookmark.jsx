@@ -1,12 +1,16 @@
 import React from "react";
 
-const Bookmark = ({ bookMark }) => {
+const Bookmark = (props) => {
+  // console.log(props);
+  const readingTime = props.readingTime;
+  const bookMark = props.bookMark;
+
   return (
     <div>
       <div className="mt-6 sticky top-0">
         <div>
           <h1 className="font-bold border-purple-400 border-4 bg-purple-100 rounded-md p-4 text-center">
-            Spent time on read : 0 min
+            Spent time on read : {readingTime} min
           </h1>
         </div>
         <div className="bg-gray-100 p-4 rounded-lg h-screen my-4">
