@@ -7,7 +7,7 @@ const MyBlog = () => {
         <h1 className="text-4xl font-bold text-center mt-8 mb-4"> My Blog</h1>
 
         {/* Question No. 1 Answer*/}
-        <div className=" border-2 p-2 m-4 rounded-lg bg-amber-50">
+        <div className="border-2 border-purple-400 p-2 m-4 rounded-lg bg-purple-100">
           <p className="font-bold py-2">
             1. What are the differences between Props vs state?{" "}
           </p>
@@ -79,7 +79,7 @@ const MyBlog = () => {
         </div>
 
         {/* QUestion No. 2 Answer */}
-        <div className=" border-2 p-2 m-4 rounded-lg bg-amber-50">
+        <div className="border-2 border-purple-400 p-2 m-4 rounded-lg bg-purple-100">
           <p className="font-bold py-2">2. How does useState work? </p>
           <p className="text-justify">
             <strong>useState</strong> hook is a very common hook in react which
@@ -91,7 +91,7 @@ const MyBlog = () => {
         </div>
 
         {/* QUestion No. 3 Answer */}
-        <div className=" border-2 p-2 m-4 rounded-lg bg-amber-50">
+        <div className="border-2 border-purple-400 p-2 m-4 rounded-lg bg-purple-100">
           <p className="font-bold py-2">
             3. What is the Purpose of useEffect other than fetching data?{" "}
           </p>
@@ -109,7 +109,7 @@ const MyBlog = () => {
         </div>
 
         {/* QUestion No. 4 Answer */}
-        <div className=" border-2 p-2 m-4 rounded-lg bg-amber-50">
+        <div className="border-2 border-purple-400 p-2 m-4 rounded-lg bg-purple-100">
           <p className="font-bold py-2">4. How does React work? </p>
           <p className="text-justify mb-4">
             React is a JavaScript library for building user interfaces. It works

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Blog from "../Blog/Blog";
 import Bookmark from "../Bookmark/Bookmark";
 
@@ -7,10 +9,27 @@ const Blogs = () => {
   const [bookMark, setBookMark] = useState([]);
 
   const handleBookmark = (blogId) => {
-    setBookMark(blogId);
-    console.log(blogId);
+    let newBookmarked = [];
+    const isBookmarked = bookMark.find((blog) => blog.id === blogId);
+    if (!isBookmarked) {
+      blogs.forEach((blogItem) => {
+        if (blogItem.id === blogId) {
+          newBookmarked.push({ ...blogItem, bookmark: true });
+        } else {
+          newBookmarked.push({ ...blogItem });
+        }
+      });
+      setBlogs(newBookmarked);
+
+      const foundBookmarked = blogs.find((blog) => blog.id === blogId);
+      const updatedBookmarked = [...bookMark, foundBookmarked];
+      setBookMark(updatedBookmarked);
+      // console.log(updatedBookmarked);
+    } else {
+      toast.error("This blog is already added!");
+    }
   };
-  //   console.log(bookMark);
+  // console.log(blogs);
 
   useEffect(() => {
     fetch("fakeData.json")
@@ -33,6 +52,7 @@ const Blogs = () => {
         </div>
         <>
           <Bookmark bookMark={bookMark}></Bookmark>
+          <ToastContainer />
         </>
       </div>
     </>
