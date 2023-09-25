@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { bookmarkRegular } from "@fortawesome/free-regular-svg-icons";
-import { bookmarkSolid } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = (props) => {
   //   console.log(props.blog);
@@ -43,13 +42,13 @@ const Blog = (props) => {
                   <FontAwesomeIcon
                     onClick={() => handleBookmark(id)}
                     className="cursor-pointer"
-                    icon={bookmarkSolid}
+                    icon={faBookmark}
                   />
                 ) : (
                   <FontAwesomeIcon
                     onClick={() => handleBookmark(id)}
                     className="cursor-pointer"
-                    icon={bookmarkRegular}
+                    icon={faBookmark}
                   />
                 )}
               </span>
