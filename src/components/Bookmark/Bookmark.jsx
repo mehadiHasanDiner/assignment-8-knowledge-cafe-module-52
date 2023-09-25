@@ -13,7 +13,12 @@ const Bookmark = ({ bookMark }) => {
           <h2 className="font-bold text-xl">
             Bookmarked Blogs : {bookMark.length}
           </h2>
-          <div className="bg-white p-4 my-4 rounded-lg"></div>
+
+          {bookMark.map((title, index) => (
+            <div key={index} className="bg-white p-4 my-4 rounded-lg">
+              {title.blog_title}
+            </div>
+          ))}
         </div>
       </div>
     </div>

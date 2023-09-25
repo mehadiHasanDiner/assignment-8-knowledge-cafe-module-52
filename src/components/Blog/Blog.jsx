@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { bookmarkRegular } from "@fortawesome/free-regular-svg-icons";
+import { bookmarkSolid } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 const Blog = (props) => {
@@ -10,6 +13,7 @@ const Blog = (props) => {
     blog_title,
     reading_time,
     hashTags,
+    bookmark,
   } = props.blog;
   const handleBookmark = props.handleBookmark;
 
@@ -34,31 +38,27 @@ const Blog = (props) => {
             </div>
             <div className=" flex">
               {reading_time} min read{" "}
-              <span
-                onClick={() => handleBookmark(id)}
-                className="cursor-pointer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+              <span>
+                {bookmark ? (
+                  <FontAwesomeIcon
+                    onClick={() => handleBookmark(id)}
+                    className="cursor-pointer"
+                    icon={bookmarkSolid}
                   />
-                </svg>
+                ) : (
+                  <FontAwesomeIcon
+                    onClick={() => handleBookmark(id)}
+                    className="cursor-pointer"
+                    icon={bookmarkRegular}
+                  />
+                )}
               </span>
             </div>
           </div>
           <h1 className="text-2xl font-bold my-2">{blog_title}</h1>
-          {hashTags.map((hashTag) => (
+          {hashTags.map((hashTag, index) => (
             <span
-              key={hashTag}
+              key={index}
               className="mr-2 badge badge-primary cursor-pointer my-2"
             >
               {hashTag}
